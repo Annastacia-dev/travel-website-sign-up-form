@@ -20,13 +20,15 @@
     padding: 0;
     margin: 0;
     
+    
 }
 body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    animation: slide 20s infinite;
+    animation: slide 100s infinite;
     font-family: var(--Poppins);
+    width:1320px;
 }
 
 /* Navigation Bar */
@@ -49,6 +51,7 @@ header ul{
 }
 
 header ul a{
+    font-weight: 700;
     text-decoration: none;
     color: var(--SpaceCadet);
 }
@@ -60,20 +63,14 @@ header ul a:hover{
 header ul button {
     border: none;
     background: none;
+    font-weight: 700;
+    font-size: 16px;
+   
      
 }
 
-header ul button a{
-    border:2px solid var(--SpaceCadet);
-    padding: 0 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--SpaceCadet);
-}
-
-header ul button a:hover{
-    background: var(--SpaceCadet);
-    color: #fff;
+#btn:hover{
+    color: var(--Tomato);
 
 }
 
@@ -81,16 +78,18 @@ header ul button a:hover{
 /* Quote */
 .transparent{
     background: rgba(255, 255, 255, 0.5);
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    
     
 }
 
-.container{
+/* .container{
     display: grid;
     grid-template-columns:1.5fr  2fr;
     gap: 20px;
-}
+    width: 100%;
+    margin-left: 100px;
+} */
 
 .container section blockquote{
     display: block;
@@ -161,16 +160,14 @@ header ul button a:hover{
 }
 
 #inputs button a{
-    border:2px solid var(--SpaceCadet);
     padding: 0 10px;
-    border-radius: 10px;
     text-decoration: none;
     color: var(--SpaceCadet);
+    font-weight: 700;
 }
 
 #inputs button a:hover{
-    background: var(--SpaceCadet);
-    color: #fff;
+    color: var(--Tomato);
 
 }
 
@@ -178,6 +175,14 @@ header ul button a:hover{
     position: absolute;
     padding-right:30px;
     font-size: 12px;
+}
+
+footer{
+    font-size: 12px;
+    margin: 10px;
+}
+footer a{
+    padding-left: 10px;
 }
 
 @keyframes slide {
@@ -213,3 +218,27 @@ header ul button a:hover{
     }
 
 }
+
+@media  screen and (max-width:1500px) {
+
+    .container{
+        display: grid;
+        grid-template-columns:1.5fr  2fr;
+        gap: 20px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+}
+@media  screen and (min-width:1499px) {
+
+    .container{
+        display: grid;
+        grid-template-columns:1fr
+        gap: 20px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+}
+
