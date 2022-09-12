@@ -1,27 +1,42 @@
 
+
+
 /* Global */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap');
+
+:root{
+    --DynaPuff: 'DynaPuff', cursive;
+    --Poppins: 'Poppins', san-serif;
+    --SpaceCadet: #252947;
+    --Tomato:#F26B52 ;
+    --OrangeYellowCrayola:#FFD982 ;
+    --DarkskyBlue:#7EB7C4 ;
+}
 
 *{
-    font-family: 'Poppins', sans-serif;
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
-
-/* Colors
-#252947- Space Cadet
-#F26B52 - Tomato
-#FFD982 - Orange Yellow Crayola
-#7EB7C4 - Dark Sky Blue */
+body{
+    background-image: url(./images/caravan-dessert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    animation: slide 10s infinite;
+    font-family: var(--Poppins);
+}
 
 /* Navigation Bar */
 
 header{
     display: inline-flex;
-    margin: 20px;
+    padding: 20px 10px;
     width: 100%;
-    /* background: red; */
+    /* background: rgba(0, 0, 0, 0.4); */
 }
 
 header ul{
@@ -30,17 +45,17 @@ header ul{
     list-style: none;
     justify-content: center ;
     padding: 10px;
-    padding-left: 500px;
+    padding-left: 300px;
     gap: 20px;
 }
 
 header ul a{
     text-decoration: none;
-    color: #252947;
+    color: var(--SpaceCadet);
 }
 
 header ul a:hover{
-    color: #F26B52 ;
+    color: var(--DarkskyBlue);
 }
 
 header ul button {
@@ -50,15 +65,118 @@ header ul button {
 }
 
 header ul button a{
-    border:2px solid #252947;
+    border:2px solid var(--SpaceCadet);
     padding: 0 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: #252947;;
+    color: var(--SpaceCadet);
 }
 
 header ul button a:hover{
-    background: #252947;
+    background: var(--SpaceCadet);
     color: #fff;
 
+}
+
+/* Main */
+/* Quote */
+.transparent{
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns:1.5fr  2fr;
+    gap: 20px;
+}
+
+.container section blockquote{
+    display: block;
+    padding: 100px;
+    font-size: 30px;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 100%;
+    font-family: var(--DynaPuff);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Form */
+#form{
+    /* background-color: red; */
+    padding:100px;
+    font-size: 20px;
+    
+    
+}
+#form div h3{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#form div h5{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#inputs{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.inputs-items input{
+    /* background: red; */
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 4px;
+    height: 50px;
+    font-family: var(--Poppins);
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background: none;
+    margin-bottom: 15px;
+}
+
+#inputs button{
+
+    border: none;
+    background: none;
+    font-family: var(--Poppins);
+    font-size: 17px;
+    
+}
+
+#inputs button a{
+    border:2px solid var(--SpaceCadet);
+    padding: 0 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--SpaceCadet);
+}
+
+#inputs button a:hover{
+    background: var(--SpaceCadet);
+    color: #fff;
+
+}
+
+.inputs-items label span{
+    position: absolute;
+    padding-right:30px;
+    font-size: 12px;
 }
