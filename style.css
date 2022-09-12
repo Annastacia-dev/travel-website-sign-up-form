@@ -1,0 +1,64 @@
+
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Colors
+#252947- Space Cadet
+#F26B52 - Tomato
+#FFD982 - Orange Yellow Crayola
+#7EB7C4 - Dark Sky Blue */
+
+/* Navigation Bar */
+
+header{
+    display: inline-flex;
+    margin: 20px;
+    width: 100%;
+    /* background: red; */
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center ;
+    padding: 10px;
+    padding-left: 500px;
+    gap: 20px;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #252947;
+}
+
+header ul a:hover{
+    color: #F26B52 ;
+}
+
+header ul button {
+    border: none;
+    background: none;
+     
+}
+
+header ul button a{
+    border:2px solid #252947;
+    padding: 0 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #252947;;
+}
+
+header ul button a:hover{
+    background: #252947;
+    color: #fff;
+
+}
