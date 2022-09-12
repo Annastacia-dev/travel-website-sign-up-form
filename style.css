@@ -22,11 +22,10 @@
     
 }
 body{
-    background-image: url(./images/caravan-dessert.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
     font-family: var(--Poppins);
 }
 
@@ -122,7 +121,7 @@ header ul button a:hover{
 #form div h5{
     font-weight: 400;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #inputs{
@@ -179,4 +178,38 @@ header ul button a:hover{
     position: absolute;
     padding-right:30px;
     font-size: 12px;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(./images/caravan-dessert.jpg);
+    }
+    20%{
+        background-image: url(./images/caravan-dessert.jpg);
+    }
+    20.01%{
+        background-image: url(./images/mountain-landscape.jpg);
+    }
+    40%{
+        background-image: url(./images/mountain-landscape.jpg);
+    }
+    40.01%{
+        background-image: url(./images/animal-park.jpg);
+    }
+    60%{
+        background-image: url(./images/animal-park.jpg);
+    }
+    60.01%{
+        background-image: url(./images/beach-landscape.jpg);
+    }
+    80%{
+        background-image: url(./images/beach-landscape.jpg);
+    }
+    80.01%{
+        background-image: url(./images/morning-scenery.jpg);
+    }
+    100%{
+        background-image: url(./images/morning-scenery.jpg);
+    }
+
 }
